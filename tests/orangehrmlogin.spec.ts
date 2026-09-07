@@ -14,7 +14,6 @@ test('OrangeHRM successful login', async ({ page }) => {
 
 });
 
-
 test('Invalid login', async ({ page }) => {
 
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
@@ -28,7 +27,6 @@ test('Invalid login', async ({ page }) => {
     await expect(page.getByText('Invalid credentials')).toBeVisible();
 
 });
-
 
 test('Login with empty fields', async ({ page }) => {
 
@@ -53,7 +51,6 @@ test('Password should be masked', async ({ page }) => {
 
 });
 
-
 test('Verify login page UI', async ({ page }) => {
 
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
@@ -73,7 +70,6 @@ test('Verify login page UI', async ({ page }) => {
     ).toBeVisible();
 
 });
-
 
 test('Verify Forgot Password link', async ({ page }) => {
 
