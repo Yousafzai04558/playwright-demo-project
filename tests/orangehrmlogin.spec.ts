@@ -39,6 +39,7 @@ test('Login with empty fields', async ({ page }) => {
 });
 
 
+
 test('Password should be masked', async ({ page }) => {
 
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
@@ -50,6 +51,7 @@ test('Password should be masked', async ({ page }) => {
     await expect(password).toHaveAttribute('type', 'password');
 
 });
+
 
 test('Verify login page UI', async ({ page }) => {
 
@@ -71,6 +73,7 @@ test('Verify login page UI', async ({ page }) => {
 
 });
 
+
 test('Verify Forgot Password link', async ({ page }) => {
 
     await page.goto(
@@ -82,7 +85,6 @@ test('Verify Forgot Password link', async ({ page }) => {
     await expect(page).toHaveURL(/requestPasswordResetCode/);
 
 });
-
 
 test('Verify password reset page', async ({ page }) => {
 
