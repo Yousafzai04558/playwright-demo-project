@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('OrangeHRM successful login', async ({ page }) => {
+test("OrangeHRM successful login", async ({ page }) => {
 
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
 
@@ -14,7 +14,7 @@ test('OrangeHRM successful login', async ({ page }) => {
 
 });
 
-test('Invalid login', async ({ page }) => {
+test("Invalid login", async ({ page }) => {
 
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
 
@@ -28,7 +28,7 @@ test('Invalid login', async ({ page }) => {
 
 });
 
-test('Login with empty fields', async ({ page }) => {
+test("Login with empty fields", async ({ page }) => {
 
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
 
@@ -40,11 +40,11 @@ test('Login with empty fields', async ({ page }) => {
 
 
 
-test('Password should be masked', async ({ page }) => {
+test("Password should be masked", async ({ page }) => {
 
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
 
-    const password = page.getByPlaceholder('Password');
+    const password=page.getByPlaceholder('Password');
 
     await password.fill('admin123');
 
@@ -53,7 +53,7 @@ test('Password should be masked', async ({ page }) => {
 });
 
 
-test('Verify login page UI', async ({ page }) => {
+test("Verify login page UI", async ({ page }) => {
 
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
 
@@ -86,7 +86,7 @@ test('Verify Forgot Password link', async ({ page }) => {
 
 });
 
-test('Verify password reset page', async ({ page }) => {
+test("Verify password reset page", async ({ page }) => {
 
     await page.goto(
         'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'
@@ -105,7 +105,7 @@ test('Verify password reset page', async ({ page }) => {
 });
 
 
-test('Verify social media links', async ({ page }) => {
+test("Verify social media links", async ({ page }) => {
 
     await page.goto(
         'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'
