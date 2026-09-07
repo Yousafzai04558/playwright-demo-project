@@ -1,0 +1,23 @@
+{
+  "name": "playwright-demo-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yousafzai04558/playwright-demo-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Yousafzai04558/playwright-demo-project/issues"
+  },
+  "homepage": "https://github.com/Yousafzai04558/playwright-demo-project#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.4.1"
+  }
+}
